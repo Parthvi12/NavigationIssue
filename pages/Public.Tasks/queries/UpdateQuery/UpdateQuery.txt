@@ -1,0 +1,8 @@
+UPDATE public."Tasks" SET
+		"TaskName" = '{{update_form.fieldState.TaskName.isVisible ? update_form.formData.TaskName : update_form.sourceData.TaskName}}',
+		"TargetDate" = '{{update_form.fieldState.TargetDate.isVisible ? update_form.formData.TargetDate : update_form.sourceData.TargetDate}}',
+    "Recurring" = '{{update_form.fieldState.Recurring.isVisible ? update_form.formData.Recurring : update_form.sourceData.Recurring}}',
+		"Project" = '{{update_form.fieldState.Project.isVisible ? update_form.formData.Project : update_form.sourceData.Project}}',
+		"Progress" = '{{update_form.fieldState.Progress.isVisible ? update_form.formData.Progress : update_form.sourceData.Progress}}',
+		"AssignTo" = '{{update_form.fieldState.AssignTo.isVisible ? update_form.formData.AssignTo : update_form.sourceData.AssignTo}}'
+WHERE "id" = {{data_table.selectedRow.id}};

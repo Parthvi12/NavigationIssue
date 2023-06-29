@@ -1,0 +1,16 @@
+INSERT INTO public."Tasks" (
+	"id",
+	"TaskName",
+	"TargetDate",
+	"Recurring",
+	"Project",
+	"Progress",
+	"AssignTo")
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.TaskName}}',
+	'{{insert_form.formData.TargetDate}}',
+	'{{insert_form.formData.Recurring}}',
+	'{{insert_form.formData.Project}}',
+	'{{insert_form.formData.Progress}}',
+	'{{insert_form.formData.AssignTo}}');
