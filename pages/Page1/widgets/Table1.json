@@ -74,6 +74,7 @@
     "rightColumn": 24,
     "textSize": "0.875rem",
     "widgetId": "gjtvb85tpu",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "",
     "label": "Data",
